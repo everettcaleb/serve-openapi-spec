@@ -1,0 +1,36 @@
+{
+  "name": "serve-openapi-spec",
+  "version": "1.0.0",
+  "description": "Express middleware for serving a YAML OpenAPI v3 spec as /spec.yaml and /spec.json",
+  "main": "index.js",
+  "scripts": {
+    "check": "npx standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everettcaleb/serve-openapi-spec.git"
+  },
+  "keywords": [
+    "openapi",
+    "openapiv3",
+    "express",
+    "middleware",
+    "serve",
+    "router",
+    "spec",
+    "specification"
+  ],
+  "author": "Caleb Everett <everettcaleb95@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/everettcaleb/serve-openapi-spec/issues"
+  },
+  "homepage": "https://github.com/everettcaleb/serve-openapi-spec#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "js-yaml": "^3.12.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
