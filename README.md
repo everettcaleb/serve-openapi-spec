@@ -14,12 +14,15 @@ To use, include it as a router in an express app:
     const serveSpec = require('serve-openapi-spec')
     const app = express()
     ...
-    app.use(serveSpec(path.resolve('openapi.yaml')))
+    app.use(serveSpec(path.resolve('openapi.yaml'), { name: 'spec' }))
     ...
 
 You can also map it to a different path:
 
     app.use('/api/v1', serveSpec(path.resolve('openapi.yaml')))
+
+Options are passed as the second argument to `serveSpec(pathToYaml, options)`. Options are:
+- name (default: `spec`): The name assigned to the files (ex: `spec` would result in `/spec.yaml` whereas `swagger` would result in `/swagger.yaml`)
 
 ## Contributions
 Anyone who wants to contribute changes/bug reports/fixes is welcome to and pull requests will be evaluated against the following acceptance criteria:

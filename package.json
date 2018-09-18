@@ -1,6 +1,6 @@
 {
   "name": "serve-openapi-spec",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Express middleware for serving a YAML OpenAPI v3 spec as /spec.yaml and /spec.json",
   "main": "index.js",
   "scripts": {
