@@ -22,7 +22,9 @@ You can also map it to a different path:
     app.use('/api/v1', serveSpec(path.resolve('openapi.yaml')))
 
 Options are passed as the second argument to `serveSpec(pathToYaml, options)`. Options are:
-- name (default: `spec`): The name assigned to the files (ex: `spec` would result in `/spec.yaml` whereas `swagger` would result in `/swagger.yaml`)
+- `name` (default: `spec`): The name assigned to the files (ex: `spec` would result in `/spec.yaml` whereas `swagger` would result in `/swagger.yaml`)
+- `version`: Overrides spec version. Default is to not modify the spec.
+- `basePath`: Overrides spec base path. Default is to not modify the spec.
 
 ## Contributions
 Anyone who wants to contribute changes/bug reports/fixes is welcome to and pull requests will be evaluated against the following acceptance criteria:
